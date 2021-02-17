@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Architects+Daughter&family=Kanit:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+        <h1>Trip Planner</h1>
+        </div>
+    </header>
+    <div class="container"> 
+    <p id="info-text">Calculate the time for your trip.<br>
+    </p>
+    <label class="theAverageSpeed" for="theAverageSpeed">What is your average speed?</label>
+    <br>
+    <p id="placeForError1"></p>
+    <input id="averageSpeed" type="number">
+    <br>
+    <label class="theKilometers" for="theKilometers">How many kilometers will you drive?</label>
+    <br>
+    <p id="placeForError2"></p>
+    <input id="kilometers" type="number">
+    <br>
+    <input id="submit" type="submit" value="Submit">
+    <div id="placeForMinutes"></div>
+    </div>
+    <div id="car"></div>
+    <script src="app.js"></script>
+</body>
+</html>

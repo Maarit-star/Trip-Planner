@@ -1,0 +1,107 @@
+*:focus {
+  outline: none;
+}
+body {
+  background-color: #fdfffc;
+}
+.container {
+  width: 100%;
+  text-align: center;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  padding-top: 1%;
+  color: #011627;
+}
+#info-text {
+  font-family: "Roboto", sans-serif;
+  color: #2ec4b6;
+  font-size: 1.5em;
+}
+.theAverageSpeed,
+.theKilometers {
+  font-family: "Roboto", sans-serif;
+  color: #2ec4b6;
+  padding-top: 15px;
+}
+#averageSpeed,
+#kilometers {
+  /* margin-top: 2px; */
+  padding: 6px;
+  margin-bottom: 20px;
+  color: #011627;
+  border: 1px solid #2ec4b6;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#submit {
+  background-color: #ff9f1c;
+  color: #fdfffc;
+  padding: 10px 15px;
+  border-radius: 7px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+#submit:hover {
+  background-color: #011627;
+}
+
+.carShows {
+  content: url("img/greenishCar.png");
+  height: 70px;
+  position: fixed;
+  left: 10%;
+  top: 90%;
+  animation-name: carMoves;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  z-index: 10;
+}
+
+@keyframes carMoves {
+  0% {
+    left: 15%;
+    top: 67%;
+  }
+  100% {
+    left: 65%;
+    top: 67%;
+  }
+}
+
+.placeForMinutesClass {
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Acme", sans-serif;
+  font-size: 1.3em;
+  color: #011627;
+  margin-top: 130px;
+  animation-name: timeAppears;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 650px) {
+  .placeForMinutesClass {
+    margin-top: 25%;
+  }
+}
+
+@keyframes timeAppears {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.error {
+  color: red;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1px;
+}
